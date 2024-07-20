@@ -1,0 +1,49 @@
+.hero {
+    &__inner {
+        @apply
+            rounded-[50px] sm:rounded-[60px] md:rounded-[80px]
+            pt-[115px] sm:pt-[130px]
+            pb-[88px] sm:pb-[110px]
+            px-5 sm:px-10 md:px-20
+        ;
+
+        background: #000 url("../../assets/hero-bg.png") center no-repeat;
+        background-size: cover;
+    }
+
+    &__content {
+        @apply max-w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-[55%] w-full;
+    }
+
+    &__title {
+        @apply
+            text-white text-[28px] xs:text-[36px] lg:text-[56px] xl:text-[64px]
+            font-medium leading-[1.22]
+        ;
+    }
+
+    &__subtitle {
+        @apply
+            mt-10 sm:mt-[16px]
+            font-semibold
+            text-white text-base xs:text-xl sm:text-2xl
+        ;
+    }
+
+    &__text {
+        color: rgba(255, 255, 255, 0.8);
+
+        @apply
+            mt-[10px] sm:mt-[7px]
+            font-medium
+            text-base xs:text-xl sm:text-2xl
+        ;
+    }
+
+    &__btn {
+        @apply
+            mt-[40px] sm:mt-[69px]
+            text-base xs:text-xl
+        ;
+    }
+}

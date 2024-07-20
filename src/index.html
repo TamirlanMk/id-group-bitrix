@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>id group</title>
+</head>
+<body>
+<div class="site-container w-full">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="/" class="logo">
+                    id group
+                </a>
+                <nav class="menu header__menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" data-scroll-to="" href="#stats">мы в цифрах</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" data-scroll-to="" href="#solved-problems">чем поможет Битрикс24</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" data-scroll-to="" href="#clients">наши клиенты</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" data-scroll-to="" href="#tariffs">тарифы внедрения</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="ml-[15px]">
+                    <a href="#stats" class="btn btn--sm header__btn">
+                        заявка
+                    </a>
+                </div>
+                <button class="header__burger burger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main role="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <div class="hero__content">
+                        <h1 class="hero__title">
+                            Внедрение и сопровождение
+                            Битрикс&nbsp;24
+                        </h1>
+                        <h3 class="hero__subtitle">Внедрение за месяц</h3>
+                        <p class="hero__text">Удобные тарифы для знакомства с системой</p>
+                        <a href="#stats" class="hero__btn btn btn--white btn--lg">рассчитать стоимость</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="stats" class="stats">
+            <div class="container">
+                <h2 class="stats__title section__title">
+                    iD Group в цифрах
+                </h2>
+                <div class="stats__content">
+                    <div class="stats__list">
+                        <div class="stats__item">
+                            <div class="stats__item-title">
+                                <span data-counter="true">10</span>+
+                            </div>
+                            <p class="stats__item-text">
+                                лет опыта в сфере 1С и
+                                автоматизации бизнеса
+                            </p>
+                        </div>
+
+                        <div class="stats__item">
+                            <div class="stats__item-title">
+                                <span data-counter="true">200</span>+
+                            </div>
+                            <p class="stats__item-text">
+                                крупных проектов и
+                                довольных клиентов
+                            </p>
+                        </div>
+
+                        <div class="stats__item">
+                            <div class="stats__item-title">
+                                <span data-counter="true">2</span>к+
+                            </div>
+                            <p class="stats__item-text">
+                                звонков обрабатываем
+                                ежемесячно
+                            </p>
+                        </div>
+
+                        <div class="stats__item">
+                            <div class="stats__item-title">
+                                <span data-counter="true">10</span>
+                            </div>
+                            <p class="stats__item-text">
+                                аттестованных
+                                специалистов
+                            </p>
+                        </div>
+
+                        <div class="stats__item">
+                            <div class="stats__item-title">
+                                <span data-counter="true">45</span>+
+                            </div>
+                            <p class="stats__item-text">
+                                сертификатов с нашими
+                                компетенциями
+                            </p>
+                        </div>
+                    </div>
+                    <form action="/" method="get" class="feedback__form form">
+                        <div class="form__title">Обратная связь</div>
+                        <div class="form__item">
+                            <label class="sr-only" for="name-input">Имя</label>
+                            <input class="form__input" id="name-input" required type="text" name="name"
+                                   placeholder="Введите имя">
+                        </div>
+                        <div class="form__item">
+                            <label class="sr-only" for="tel-input">Телефон</label>
+                            <input class="form__input" id="tel-input" required type="tel" name="phone"
+                                   placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _">
+                        </div>
+                        <div class="form__item">
+                            <label class="sr-only" for="email-input">Почта</label>
+                            <input class="form__input" id="email-input" required type="email" name="email"
+                                   placeholder="Введите e-mail">
+                        </div>
+                        <div class="form__item">
+                            <label class="sr-only" for="comment-input">Коментарий</label>
+                            <textarea class="form__textarea" id="comment-input" type="text" name="name"
+                                      placeholder="Комментарий к заявке"></textarea>
+                        </div>
+                        <div class="form__item form__item-checkbox">
+                            <input class="form__checkbox cursor-pointer" type="checkbox" id="confirm-input">
+                            <label class="form__label block cursor-pointer" for="confirm-input">
+                                Я даю согласие на обработку персональных данных в
+                                соответствии с Политикой Конфиденциальности
+                            </label>
+                        </div>
+                        <button class="form__submit btn btn--accent" type="submit">отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="solved-problems" class="solved-problems">
+            <div class="container">
+                <h2 class="solved-problems__title section__title">
+                    Какие задачи решает
+                    <span class="sm:block"></span>
+                    Битрикс24
+                </h2>
+                <div class="solved-problems__list">
+                    <div class="solved-problems__card">
+                        <h3 class="solved-problems__card-title">Систематизация отдела продаж</h3>
+                        <p class="solved-problems__card-text">
+                            полный набор CRM-инструментов и онлайн-офис для
+                            организации работы отдела продаж
+                        </p>
+                    </div>
+                    <div class="solved-problems__card">
+                        <h3 class="solved-problems__card-title">Автоматизация процессов</h3>
+                        <p class="solved-problems__card-text">
+                            автоматизируйте внутренние процессы
+                        </p>
+                    </div>
+                    <div class="solved-problems__card">
+                        <h3 class="solved-problems__card-title">Интернет магазин на Битрикс</h3>
+                        <p class="solved-problems__card-text">
+                            расширьте присутствие в сети
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="clients" class="clients">
+            <div class="container">
+                <h2 class="section__title">Наши клиенты</h2>
+                <div class="clients-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/clients/clients-1.png" alt="Сеть аптек Забота">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/clients/clients-4.png" alt="Сеть металлобаз Металлинвест">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/clients/clients-2.png" alt="ТД Особняк">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/clients/clients-3.png" alt="Арасан">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="tariffs" class="tariffs">
+            <div class="container">
+                <div class="tariffs__inner">
+                    <h2 class="section__title tariffs__title">
+                        Тарифы
+                    </h2>
+                    <div class="tariffs__list">
+                        <div class="tariffs__card">
+                            <h3 class="tariffs__card-title">CRM Lite</h3>
+                            <ul class="tariffs__card-list">
+                                <li>CRM, онлайн-офис и онлайн-диск для организации работы отдела продаж.</li>
+                                <li>Интеграция IP-телефонии, почты и дополнительных модулей.</li>
+                                <li>Контроль, управление продажами и эффективностью сотрудников.</li>
+                                <li>Удаленный доступ, автоматизация системных процессов и гибкий функционал.</li>
+                                <li>Интеграция IP-телефонии, почты и дополнительных модулей.</li>
+                            </ul>
+                            <footer class="tariffs__card-footer">
+                                <p class="tariffs__card-price">39 000 ₸</p>
+                                <a href="#stats" class="btn btn--accent">заказать</a>
+                            </footer>
+                        </div>
+
+                        <div class="tariffs__card">
+                            <h3 class="tariffs__card-title">CRM Lite</h3>
+                            <ul class="tariffs__card-list">
+                                <li>CRM, онлайн-офис и онлайн-диск для организации работы отдела продаж.</li>
+                                <li>Интеграция IP-телефонии, почты и дополнительных модулей.</li>
+                                <li>Контроль, управление продажами и эффективностью сотрудников.</li>
+                                <li>Удаленный доступ, автоматизация системных процессов и гибкий функционал.</li>
+                                <li>Интеграция IP-телефонии, почты и дополнительных модулей.</li>
+                            </ul>
+                            <footer class="tariffs__card-footer">
+                                <p class="tariffs__card-price">39 000 ₸</p>
+                                <a href="#stats"  class="btn btn--accent">заказать</a>
+                            </footer>
+                        </div>
+
+                        <div class="tariffs__card">
+                            <h3 class="tariffs__card-title">CRM Lite</h3>
+                            <ul class="tariffs__card-list">
+                                <li>CRM, онлайн-офис и онлайн-диск для организации работы отдела продаж.</li>
+                                <li>Интеграция IP-телефонии, почты и дополнительных модулей.</li>
+                                <li>Контроль, управление продажами и эффективностью сотрудников.</li>
+                                <li>Удаленный доступ, автоматизация системных процессов и гибкий функционал.</li>
+                                <li>Интеграция IP-телефонии, почты и дополнительных модулей.</li>
+                            </ul>
+                            <footer class="tariffs__card-footer">
+                                <p class="tariffs__card-price">39 000 ₸</p>
+                                <a href="#stats"  class="btn btn--accent">заказать</a>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="presentation" class="free-presentation">
+            <div class="container">
+                <a href="#" class="free-presentation__content">
+                    <div class="free-presentation-text">
+                        бесплатная онлайн презентация
+                        от нашего специалиста
+                    </div>
+                    <img class="free-presentation-icon" src="assets/arrow-right.png" aria-hidden="true" alt>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__col">
+                    <h4 class="footer__title">Контакты</h4>
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#">
+                                г. Костанай, ул. <br>Баймагамбетова,&nbsp;3/3&nbsp;оф.&nbsp;22
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+77142394343">
+                                +7 714 239 43 43
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@id-group.pro">
+                                info@id-group.pro
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Продукты</h4>
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#">
+                                Программы 1С
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Отраслевые решения
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Помощь в выборе
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Прайс - лист
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Специальные предложения
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">
+                        Отраслевые<br>
+                        решения
+                    </h4>
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#">
+                                Производство
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Строительство
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Торговля
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Автобизнес
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Сельское хозяйство
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">
+                        Социальные<br>
+                        сети
+                    </h4>
+                    <ul class="footer__list">
+                        <li>
+                            <a class="social__link !mt-5" target="_blank" href="#">
+                                <img src="assets/Telegram.svg" aria-hidden="true" alt>
+                                telegram
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social__link" target="_blank" href="#">
+                                <img src="assets/Skype.svg" aria-hidden="true" alt>
+                                skype
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social__link" target="_blank" href="#">
+                                <img src="assets/Instagram.svg" aria-hidden="true" alt>
+                                instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social__link" target="_blank" href="#">
+                                <img src="assets/WhatsApp.svg" aria-hidden="true" alt>
+                                whatsapp
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                Copyright 2019 — 2024 ID-Group.Pro | Разработка ... | All Rights Reserved
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="js/app.js" type="module"></script>
+</body>
+</html>

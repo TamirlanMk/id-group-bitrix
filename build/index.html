@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <title>id group</title>
+  <script type="module" crossorigin src="./js/main.js"></script>
+  <link rel="stylesheet" crossorigin href="./css/main.css">
+</head>
+<body>
+<div class="site-container w-full">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="/" class="logo">
+                    id group
+                </a>
+                <nav class="menu header__menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" data-scroll-to="" href="#stats">мы в цифрах</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" data-scroll-to="" href="#solved-problems">чем поможет Битрикс24</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" data-scroll-to="" href="#clients">наши клиенты</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" data-scroll-to="" href="#tariffs">тарифы внедрения</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="ml-[15px]">
+                    <a href="#stats" class="btn btn--sm header__btn">
+                        заявка
+                    </a>
+                </div>
+                <button class="header__burger burger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main role="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <div class="hero__content">
+                        <h1 class="hero__title">
+                            Внедрение и сопровождение
+                            Битрикс&nbsp;24
+                        </h1>
+                        <h3 class="hero__subtitle">Внедрение за месяц</h3>
+                        <p class="hero__text">Удобные тарифы для знакомства с системой</p>
+                        <a href="#stats" class="hero__btn btn btn--white btn--lg">рассчитать стоимость</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="stats" class="stats">
+            <div class="container">
+                <h2 class="stats__title section__title">
+                    iD Group в цифрах
+                </h2>
+                <div class="stats__content">
+                    <div class="stats__list">
+                        <div class="stats__item">
+                            <div class="stats__item-title">
+                                <span data-counter="true">10</span>+
+                            </div>
+                            <p class="stats__item-text">
+                                лет опыта в сфере 1С и
+                                автоматизации бизнеса
+                            </p>
+                        </div>
+
+                        <div class="stats__item">
+                            <div class="stats__item-title">
+                                <span data-counter="true">200</span>+
+                            </div>
+                            <p class="stats__item-text">
+                                крупных проектов и
+                                довольных клиентов
+                            </p>
+                        </div>
+
+                        <div class="stats__item">
+                            <div class="stats__item-title">
+                                <span data-counter="true">2</span>к+
+                            </div>
+                            <p class="stats__item-text">
+                                звонков обрабатываем
+                                ежемесячно
+                            </p>
+                        </div>
+
+                        <div class="stats__item">
+                            <div class="stats__item-title">
+                                <span data-counter="true">10</span>
+                            </div>
+                            <p class="stats__item-text">
+                                аттестованных
+                                специалистов
+                            </p>
+                        </div>
+
+                        <div class="stats__item">
+                            <div class="stats__item-title">
+                                <span data-counter="true">45</span>+
+                            </div>
+                            <p class="stats__item-text">
+                                сертификатов с нашими
+                                компетенциями
+                            </p>
+                        </div>
+                    </div>
+                    <form action="/" method="get" class="feedback__form form">
+                        <div class="form__title">Обратная связь</div>
+                        <div class="form__item">
+                            <label class="sr-only" for="name-input">Имя</label>
+                            <input class="form__input" id="name-input" required type="text" name="name"
+                                   placeholder="Введите имя">
+                        </div>
+                        <div class="form__item">
+                            <label class="sr-only" for="tel-input">Телефон</label>
+                            <input class="form__input" id="tel-input" required type="tel" name="phone"
+                                   placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _">
+                        </div>
+                        <div class="form__item">
+                            <label class="sr-only" for="email-input">Почта</label>
+                            <input class="form__input" id="email-input" required type="email" name="email"
+                                   placeholder="Введите e-mail">
+                        </div>
+                        <div class="form__item">
+                            <label class="sr-only" for="comment-input">Коментарий</label>
+                            <textarea class="form__textarea" id="comment-input" type="text" name="name"
+                                      placeholder="Комментарий к заявке"></textarea>
+                        </div>
+                        <div class="form__item form__item-checkbox">
+                            <input class="form__checkbox cursor-pointer" type="checkbox" id="confirm-input">
+                            <label class="form__label block cursor-pointer" for="confirm-input">
+                                Я даю согласие на обработку персональных данных в
+                                соответствии с Политикой Конфиденциальности
+                            </label>
+                        </div>
+                        <button class="form__submit btn btn--accent" type="submit">отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="solved-problems" class="solved-problems">
+            <div class="container">
+                <h2 class="solved-problems__title section__title">
+                    Какие задачи решает
+                    <span class="sm:block"></span>
+                    Битрикс24
+                </h2>
+                <div class="solved-problems__list">
+                    <div class="solved-problems__card">
+                        <h3 class="solved-problems__card-title">Систематизация отдела продаж</h3>
+                        <p class="solved-problems__card-text">
+                            полный набор CRM-инструментов и онлайн-офис для
+                            организации работы отдела продаж
+                        </p>
+                    </div>
+                    <div class="solved-problems__card">
+                        <h3 class="solved-problems__card-title">Автоматизация процессов</h3>
+                        <p class="solved-problems__card-text">
+                            автоматизируйте внутренние процессы
+                        </p>
+                    </div>
+                    <div class="solved-problems__card">
+                        <h3 class="solved-problems__card-title">Интернет магазин на Битрикс</h3>
+                        <p class="solved-problems__card-text">
+                            расширьте присутствие в сети
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="clients" class="clients">
+            <div class="container">
+                <h2 class="section__title">Наши клиенты</h2>
+                <div class="clients-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./css/clients-1.png" alt="Сеть аптек Забота">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./css/clients-4.png" alt="Сеть металлобаз Металлинвест">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./css/clients-2.png" alt="ТД Особняк">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./css/clients-3.png" alt="Арасан">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="tariffs" class="tariffs">
+            <div class="container">
+                <div class="tariffs__inner">
+                    <h2 class="section__title tariffs__title">
+                        Тарифы
+                    </h2>
+                    <div class="tariffs__list">
+                        <div class="tariffs__card">
+                            <h3 class="tariffs__card-title">CRM Lite</h3>
+                            <ul class="tariffs__card-list">
+                                <li>CRM, онлайн-офис и онлайн-диск для организации работы отдела продаж.</li>
+                                <li>Интеграция IP-телефонии, почты и дополнительных модулей.</li>
+                                <li>Контроль, управление продажами и эффективностью сотрудников.</li>
+                                <li>Удаленный доступ, автоматизация системных процессов и гибкий функционал.</li>
+                                <li>Интеграция IP-телефонии, почты и дополнительных модулей.</li>
+                            </ul>
+                            <footer class="tariffs__card-footer">
+                                <p class="tariffs__card-price">39 000 ₸</p>
+                                <a href="#stats" class="btn btn--accent">заказать</a>
+                            </footer>
+                        </div>
+
+                        <div class="tariffs__card">
+                            <h3 class="tariffs__card-title">CRM Lite</h3>
+                            <ul class="tariffs__card-list">
+                                <li>CRM, онлайн-офис и онлайн-диск для организации работы отдела продаж.</li>
+                                <li>Интеграция IP-телефонии, почты и дополнительных модулей.</li>
+                                <li>Контроль, управление продажами и эффективностью сотрудников.</li>
+                                <li>Удаленный доступ, автоматизация системных процессов и гибкий функционал.</li>
+                                <li>Интеграция IP-телефонии, почты и дополнительных модулей.</li>
+                            </ul>
+                            <footer class="tariffs__card-footer">
+                                <p class="tariffs__card-price">39 000 ₸</p>
+                                <a href="#stats"  class="btn btn--accent">заказать</a>
+                            </footer>
+                        </div>
+
+                        <div class="tariffs__card">
+                            <h3 class="tariffs__card-title">CRM Lite</h3>
+                            <ul class="tariffs__card-list">
+                                <li>CRM, онлайн-офис и онлайн-диск для организации работы отдела продаж.</li>
+                                <li>Интеграция IP-телефонии, почты и дополнительных модулей.</li>
+                                <li>Контроль, управление продажами и эффективностью сотрудников.</li>
+                                <li>Удаленный доступ, автоматизация системных процессов и гибкий функционал.</li>
+                                <li>Интеграция IP-телефонии, почты и дополнительных модулей.</li>
+                            </ul>
+                            <footer class="tariffs__card-footer">
+                                <p class="tariffs__card-price">39 000 ₸</p>
+                                <a href="#stats"  class="btn btn--accent">заказать</a>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="presentation" class="free-presentation">
+            <div class="container">
+                <a href="#" class="free-presentation__content">
+                    <div class="free-presentation-text">
+                        бесплатная онлайн презентация
+                        от нашего специалиста
+                    </div>
+                    <img class="free-presentation-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAeCAYAAACc7RhZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACtSURBVHgB7ZmxDcJAEAQHaIASKIEOoAQ68JVAB9CJS6AEl0JMhDuAOzkBIWTJmb070jr6ZCaxXg/zZpu75rrcCUHa3OtjDWLc+A4gF+HIbwC5CIEjOEIROIIjFIEjOEIROIIjFMFIhDrw/HNo6WtW+bnndmjSrxmulKr0m/w8cns0Q5wRIBD+EwSWt7zlsbzlF09geU35eg2SlS86hOWLC8LyRV3gWoYnsgMTeAMiiMqO8mMWoQAAAABJRU5ErkJggg==" aria-hidden="true" alt>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__col">
+                    <h4 class="footer__title">Контакты</h4>
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#">
+                                г. Костанай, ул. <br>Баймагамбетова,&nbsp;3/3&nbsp;оф.&nbsp;22
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+77142394343">
+                                +7 714 239 43 43
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@id-group.pro">
+                                info@id-group.pro
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Продукты</h4>
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#">
+                                Программы 1С
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Отраслевые решения
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Помощь в выборе
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Прайс - лист
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Специальные предложения
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">
+                        Отраслевые<br>
+                        решения
+                    </h4>
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#">
+                                Производство
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Строительство
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Торговля
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Автобизнес
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Сельское хозяйство
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">
+                        Социальные<br>
+                        сети
+                    </h4>
+                    <ul class="footer__list">
+                        <li>
+                            <a class="social__link !mt-5" target="_blank" href="#">
+                                <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3crect%20opacity='0.6'%20width='20'%20height='20'%20fill='url(%23pattern0_110_520)'/%3e%3cdefs%3e%3cpattern%20id='pattern0_110_520'%20patternContentUnits='objectBoundingBox'%20width='1'%20height='1'%3e%3cuse%20xlink:href='%23image0_110_520'%20transform='scale(0.01)'/%3e%3c/pattern%3e%3cimage%20id='image0_110_520'%20width='100'%20height='100'%20xlink:href='data:image/png;base64,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'/%3e%3c/defs%3e%3c/svg%3e" aria-hidden="true" alt>
+                                telegram
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social__link" target="_blank" href="#">
+                                <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3crect%20opacity='0.6'%20width='20'%20height='20'%20fill='url(%23pattern0_110_518)'/%3e%3cdefs%3e%3cpattern%20id='pattern0_110_518'%20patternContentUnits='objectBoundingBox'%20width='1'%20height='1'%3e%3cuse%20xlink:href='%23image0_110_518'%20transform='scale(0.0111111)'/%3e%3c/pattern%3e%3cimage%20id='image0_110_518'%20width='90'%20height='90'%20xlink:href='data:image/png;base64,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'/%3e%3c/defs%3e%3c/svg%3e" aria-hidden="true" alt>
+                                skype
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social__link" target="_blank" href="#">
+                                <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3crect%20opacity='0.6'%20width='20'%20height='20'%20fill='url(%23pattern0_110_517)'/%3e%3cdefs%3e%3cpattern%20id='pattern0_110_517'%20patternContentUnits='objectBoundingBox'%20width='1'%20height='1'%3e%3cuse%20xlink:href='%23image0_110_517'%20transform='scale(0.0111111)'/%3e%3c/pattern%3e%3cimage%20id='image0_110_517'%20width='90'%20height='90'%20xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEyElEQVR4nO2cy29VVRSHLwOKjqsDCpiAMaKiWIsSHo1xaKLEKY8pCcrDmTiCONKgYUSBBhgCaqLgA5Uo8Q8wGA0+agLqEAExpcRabtvPrHQRSune99G1zzl37/0lN2lu2rXW+eV0nbXX3mfVaplMJpPJZDKZTCaTIsAC4AXgLeAU8AtwHbhFeYxpDD9rTBLb8xJrrdMAngEGgX/oHK4Dh4Cna1UHWAl8QWczCXwOPFWrGsB9wH6gTjzUgffk2mpVAHgE+IF4+R54uGyRVwFXiJ+/gTVlifwscIN0uAH0lZEurpIefwHLinzwSd5KlR+B+4sQWqqL1NkXWuQnIyvh2kU0WBlS6C/bDi0+Pg0lcq+ummJiDHgD6NHPbv2uGSaDLNe1dxEbu2e5ThG7WQ6G6MJ1UoOoWXpmuVa5s1tZyHRZCi2tThIRelGLNvothZaeLYmkjjdbtLHXUujTxMmY5uR2Hoa3+dhSaNkZKYOLwACwUauebmC+frr1u03yUAIulRTjT5ZCXysw8HHgBLC2xRjnAeuAk2qjKK5aCt3qv1O7nAUeNYj3MeCbgmL+z0blqcBD8y+w1SzgO3FvA0ZDB28ZcEiuyAaCWbD3xv5c6JauZbAhRV5uFqg/lQQT2zLQUOliVRO+HwJ2Al8BQ8BN/QzpdzuAJU3YWR0qjVRd6K0NfC4GjjVZQcjvHJVVXQObr6Ym9NkG/l4BRtrc19vQwPa5VIQe95VwwOvAxBzsy9/u8th/3LrOrqrQxxvcyXMR+TYTvjsb+IAEhF7rycntpAtfGulx+Fofu9AXZans8CEPPmuOeJbrf8Qs9ICnhAvRnxCbix0+D8cs9EaHfamTQ7Hd4XNzzEL3lrC7fsbhsy9mobsd9n8jHEMOnw/GLHSXw75ltTGTEc+GswlZ6CmGUxS622E/pw5joXsdQueHobHQmxxCS6szFK85fG6xcjCHZHFPUFYcdNhfEmjBUvcsWAZjFvqSZwku/WRrBj1L8D9jFlpY5/CxyPidmGFgocNXv6Gfygp90uPnRaMUIm3Slz1+PiQBocdls9Tja5dB43+nx/4Ko5535YUWvm7gb0ObaUTSxUseu5Kbv8WYKgstbGvgUw4dHmkyldS1iljYwGaQMrLqQo/K4ZYmfMvOy3Z9mf9X7YuM6M9npE52lXAz7KyR41spCo0eanHma8P4nwh5UNMyUAKLvdos2Nnv5KCnYS2DDc2oHG4xC/jOg29HqHQxnU48tntOzl0YxLsiRHVRxLHdIg+iTwDv65GAeS3ewf26GDGtk4s8iF7WqxW/6271Zt3jk9cpuvTzgH63RUs7s+MDZb5aEevLQhZ8ZCl0rK+/WbDHUuhYX+i0YL2l0At0LlzmbqRImG8mtPURqog4YCpyxGMk5sJksCGE2sTJTHE6iMjTmjNlDnCtCvXgIzWBd8u+ygrwTlCRp1Ug50mX7wobgSyzOnXYXmpcBpYWIvKMuaQpjcwclrnYhYo8Tey+RO7sy6WJPCONnI88Jy+tVQF9QO6LrPS7BbxtOgXMeKTmZx2+gpwEPrHY6Slq1v+AzoXrpAbRQNCZo6HQIVP9MrJMGuTABb2govYgZ2NMY7igMe3VGG27cJlMJpPJZDKZTCZT6xD+Bw8TuAekC6jrAAAAAElFTkSuQmCC'/%3e%3c/defs%3e%3c/svg%3e" aria-hidden="true" alt>
+                                instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social__link" target="_blank" href="#">
+                                <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3crect%20opacity='0.6'%20width='20'%20height='20'%20fill='url(%23pattern0_110_519)'/%3e%3cdefs%3e%3cpattern%20id='pattern0_110_519'%20patternContentUnits='objectBoundingBox'%20width='1'%20height='1'%3e%3cuse%20xlink:href='%23image0_110_519'%20transform='scale(0.0111111)'/%3e%3c/pattern%3e%3cimage%20id='image0_110_519'%20width='90'%20height='90'%20xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFGElEQVR4nO2dW4hWVRTHT1laWAopTdGFsoKgIHHM6KZSFlERFVkx3YgyAzUtKagogiAskMSKrIeK6qUHs8bILvRg9BAxNel0h8oudnGY6UY501x+sWgNfOb0fed41t5nn3P2D+ZlcM5e+z/f7LP2Wv+9TZJIJBKJRCKRSCQSiaQDmACcDNwAPAS8BGwFvgT6gUH96tfvbdV/86D+zGx5Rsrh6gVwOLAC2Aj8Rn5+BTqB5cBhSZ0B9geuAd4ERnDHMPAGcDWwX1IXgAP0k7Yd/+wA7gOmJlUF2Be4HeijeCSGlRJTUiWAM4EewuMzYEFSdmRNBB4DRgkXiW0tMCkpI8BRwLuUh/eBY5MyIX+ORmmabyQtPCspA8AlwE7KyyBwRRIywE2Oc2JfyBwWJSECXKybg6owAlyehISsa8AA1WMQODcJAeC4kr74srwgjyla5EmaFlWdrkLzbN2M1IW1RW6rQ97xWSNznedb5H2ALdSPHq+FKK3C1ZVbfYl8oFGp83fgHmA+0K5L0ZOET6/U1H0IfYdRytQ+zrP3At4hfFb6aD/9ZPBSOb/JGBcRPj84bYtpjy8v61J0wbcRPle5FFoaqXnYCbSlGOdOwuc1l5aAvJW59SnHOrgEtRMpoB3qQmjxXeRlaYbxnid8lroQWswteVmQYbzTCJ8NLnaCkpLlZXbGcT8ibPpN7WfqhbNgbsZxXyF82i2FFvOg15SIf1++Zeg9Xm8ptLg6LXgkw1L1OuVglaXQLxsFtU222SnGe5Ty8KKl0JYl0bktxrqOctFtKfTXhoF1thhL3J5l4itLoa0doPOajDUF+Jby0GsptLTdLeluln9KdY/yMGAp9JCDAO9qMeY6aij0Hw4CHALmtDCub6ZmS8ePjoL8RJoJLap4H1Ojl6Gsqa54usXYbYGLbZreua45LG4x/kHApgzPewGYDpwHvEWJNiwPOw7271ZmQmBv4P4UzYeu/y5HwCm6ux0NfQtuVVRqhhglZ6aIZU4Tv580jo9o8rMnakNhKNSi0iz8eSZOShHPBD2g2XjSS3L9M1LOZwbwjFHMs0xEbpiYReHfTOwGH8iFwLNiU9iDea0npMK/YSsri4vpf70fhnN6ilBehA1BLcZ/l3mF+UR2nVPejGSJi6DaCjqj8qqLGwp055lnORQtDrGOayy4oroefdIGS9M0yDCXC3LGtMkqlvGCu4xi+QC4VHLqnPOYCnyaM5YOO2V3D3Ai8B3F0wPcDEzbgznMMOgYbXd+94eRY8lyRynlgQ5gcooPyRKjJsZtTkXWgCc7rObl4S/gbdkS6zFpOft4qi41qw0dqr2tfqmWYi+iviz3InLDTtFFMyB0PhTPiU+hj6d+jBZx/G0Z9WONV5ELqHuEwHuStfgWeWLN1udfgKO9iqxCy7nAujAInONdZBX6AerBCLCwEJFVaOnJVZ1h4MYiRZ5ekTuTmjFQ+BU/wJVU/8U3v1CRjVo/IdNV+JU+YwDfU80d3xrveXILT0TV2AKcnoSEXAiSIxfdDNyrz/iG4unVO6z9FYjSktH7JnfvPyF5qDj4k92botcCn+Ofn/Xoxi4xhXY98Z9NJvAF8Lj2FKdlOOK2ULwRjs8TDuuHpCP4q+eBs8e5GOQ58Z0BRxo8f4reBdJpdFmhOIg2aOvKjSXABcDd6sa8BTjBQ1NhphorV2tPsFvbZyLg2Lrfp0tUt/5VrNJfvPgE438PEolEIpFIJBKJRCJJSv4BTVJGZgtlT7YAAAAASUVORK5CYII='/%3e%3c/defs%3e%3c/svg%3e" aria-hidden="true" alt>
+                                whatsapp
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                Copyright 2019 — 2024 ID-Group.Pro | Разработка ... | All Rights Reserved
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

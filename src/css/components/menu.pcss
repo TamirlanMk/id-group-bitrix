@@ -1,0 +1,42 @@
+.menu {
+    @apply
+        absolute lg:relative
+        top-0
+        right-5 lg:right-0
+        -translate-y-full lg:translate-y-0 transition duration-300 delay-100
+    ;
+
+    &__list {
+        @apply
+            flex flex-col lg:flex-row gap-x-[15px] xl:gap-x-[51px] gap-y-[20px]
+            bg-white
+            ps-[20px] pe-[32px] pb-[40px] pt-[78px] lg:py-0 lg:px-0
+            rounded-bl-[20px] lg:rounded-none
+        ;
+    }
+
+    &__item {
+        @apply bg-white;
+    }
+
+    &__link {
+        @apply
+            transition
+            text-xl lg:text-base font-semibold
+        ;
+
+        &:hover {
+            color: rgba(0 0 0 / 80%);
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .menu-open .menu {
+        overflow: hidden;
+        opacity: 1;
+        visibility: visible;
+
+        @apply translate-y-0;
+    }
+}

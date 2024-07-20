@@ -1,0 +1,22 @@
+html {
+    @apply scroll-smooth;
+}
+
+body {
+    @apply font-primary;
+}
+
+* {
+    @apply leading-[1.2]
+}
+
+.site-container {
+    @apply w-full;
+}
+
+.section__title {
+    @apply
+        text-[36px] sm:text-[48px] md:text-[64px]
+        font-medium
+    ;
+}

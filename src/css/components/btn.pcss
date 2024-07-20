@@ -1,0 +1,54 @@
+.btn {
+    @apply
+        inline-block
+        bg-black
+        text-xl text-white font-medium
+        py-[9px] px-[60px]
+        rounded-[35px]
+        transition
+    ;
+
+    &:hover {
+        background: rgba(0 0 0 / 95%);
+    }
+}
+
+.btn--white {
+    @apply
+        bg-white
+        text-black
+    ;
+
+    &:hover {
+        background: rgba(255 255 255 / 90%);
+    }
+}
+
+.btn--accent{
+    @apply
+        bg-accent
+        text-white
+    ;
+
+    &:hover {
+        background: rgb(255, 120, 79);
+    }
+}
+
+.btn--sm {
+    @apply
+        text-base
+        py-[8px] px-[27px]
+        transition
+    ;
+}
+
+.btn--lg {
+    @apply
+        text-base sm:text-xl
+        font-bold
+        py-[15px] sm:py-[21px]
+        px-5 sm:px-10 md:px-[52px]
+        transition
+    ;
+}

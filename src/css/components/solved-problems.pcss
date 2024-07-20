@@ -1,0 +1,56 @@
+.solved-problems {
+    @apply mt-[60px] lg:mt-20;
+
+    .container {
+        @apply md:px-[60px]
+    }
+
+    &__list {
+        @apply mt-10 lg:mt-[50px] grid grid-cols-1 lg:grid-cols-3 grid-rows-3 sm:grid-rows-1 gap-[25px];
+    }
+
+    &__card {
+        @apply
+            relative
+            pt-[80px] xl:pt-[90px]
+            px-[20px] xl:px-[40px]
+            pb-[50px] xl:pb-[106px]
+            bg-gray rounded-[50px]
+        ;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            display: block;
+            background: url("../../assets/arrow.svg") center no-repeat;
+            background-size: cover;
+            width: 21px;
+            height: 21px;
+
+            transition: transform .2s cubic-bezier(.42,.97,.52,1.49);
+        }
+
+        &:hover::after {
+           transform: translate3d(5px, -5px, 0);
+        }
+
+        &-title {
+            @apply
+                text-xl sm:text-2xl
+                font-semibold
+                !leading-[1.2]
+            ;
+        }
+
+        &-text {
+            @apply
+                text-base sm:text-xl
+                font-medium
+                !leading-[1.2]
+                mt-5
+            ;
+        }
+    }
+}

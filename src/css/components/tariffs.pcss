@@ -1,0 +1,79 @@
+.tariffs {
+    @apply mt-[80px] sm:mt-[120px];
+
+    &__inner {
+        @apply
+            rounded-[50px] sm:rounded-[60px] md:rounded-[80px]
+            py-[40px] sm:py-[60px]
+            px-5 sm:px-10
+            bg-black
+        ;
+    }
+
+    &__title {
+        @apply
+            text-white
+        ;
+    }
+
+    &__list {
+        @apply mt-[20px] sm:mt-[60px];
+    }
+
+    &__card {
+        @apply
+            bg-white
+            rounded-[30px] sm:rounded-[50px]
+            pt-10 sm:pt-[30px] pb-10 sm:pb-[45px] px-5 sm:px-[32px]
+        ;
+
+        &:not(:first-child) {
+            @apply mt-[17px];
+        }
+    }
+
+    &__card-title {
+        @apply text-xl sm:text-2xl font-semibold;
+    }
+
+    &__card-list {
+        @apply mt-[23px] text-base sm:text-xl font-medium pl-[30px] sm:pl-[32px];
+
+        color: rgba(0 0 0 / 60%);
+        list-style-image: none;
+
+        li {
+            @apply relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 20px;
+                height: 20px;
+                background: url("../../assets/list-dot.svg");
+                top: 3px;
+                left: -30px;
+            }
+
+            &:not(:first-child) {
+                @apply mt-[10px];
+            }
+        }
+    }
+
+    &__card-price {
+        @apply text-[36px] sm:text-[40px] font-bold;
+    }
+
+    &__card-footer {
+        @apply
+            mt-5 sm:mt-[44px]
+            flex flex-col sm:flex-row justify-between items-start sm:items-center gap-[14px]
+        ;
+
+        & .btn {
+            @apply w-full sm:w-fit text-center sm:text-left;
+        }
+    }
+}

@@ -1,0 +1,107 @@
+.form {
+
+    &__title {
+        @apply
+            text-[36px] lg:text-2xl
+            font-medium lg:font-semibold
+            mb-10 lg:mb-5
+        ;
+    }
+
+    &__item {
+        @apply
+            mt-[10px]
+        ;
+    }
+
+    &__item-checkbox {
+        @apply
+            flex flex-row items-start gap-5
+            mt-[15px]
+        ;
+    }
+
+    &__input, &__textarea {
+        @apply
+            bg-gray
+            rounded-[20px]
+            py-[10px] px-[30px]
+            w-full max-w-full
+        ;
+
+        &::placeholder {
+            @apply
+                text-base
+                font-medium
+            ;
+
+            color: rgba(0, 0, 0, 0.6);
+        }
+    }
+
+    &__textarea {
+        @apply rounded-[30px] min-h-[180px] py-[19px];
+    }
+
+    &__submit {
+        @apply text-2xl mt-5;
+    }
+
+    &__checkbox {
+        @apply
+            w-auto
+        ;
+
+        &::before {
+            content: 'asasfsafsa';
+        }
+    }
+
+    &__checkbox:checked,
+    &__checkbox:not(:checked) {
+        position: absolute;
+        left: -9999px;
+    }
+
+    &__checkbox + label {
+        display: inline-block;
+        position: relative;
+        padding-left: 40px;
+        line-height: 20px;
+        cursor: pointer;
+
+        color: rgba(0 0 0 / 60%);
+
+        @apply font-medium;
+    }
+
+    &__checkbox + label:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        border: 2px solid rgba(0 0 0 / 60%);
+        background-color: #ffffff;
+    }
+
+    &__checkbox:checked:focus + label {
+        text-decoration: underline;
+    }
+
+    &__checkbox:checked + label:before,
+    &__checkbox:not(:checked) + label:before {
+        border-radius: 4px;
+    }
+
+    /* стили для активного состояния чекбокса (при нажатии на него) */
+    &__checkbox:checked+label::before {
+        border-color: #c57a63;
+        background-color: #FF8461;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+        background-size: 10px 10px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}

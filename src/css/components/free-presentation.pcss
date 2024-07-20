@@ -1,0 +1,28 @@
+.free-presentation {
+    @apply mt-5 sm:mt-10;
+
+    &__content {
+        @apply
+            bg-gray
+            rounded-[50px] sm:rounded-[60px] md:rounded-[80px]
+            flex items-center gap-x-[18px] sm:gap-x-[75px]
+            ps-[30px] sm:ps-[92px] lg:ps-[184px] pe-[48px] sm:pe-[92px] lg:pe-[185px]
+            py-[30px] sm:py-[50px] lg:py-[100px]
+        ;
+
+         &:hover {
+
+             .free-presentation-icon {
+                 transform: translateX(20px);
+             }
+         }
+    }
+
+    &-text {
+        @apply text-xl sm:text-3xl lg:text-[40px] font-semibold !leading-[1.2em] sm:!leading-[49px];
+    }
+
+    &-icon {
+        @apply transition w-[25px] sm:w-[60px];
+    }
+}
