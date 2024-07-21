@@ -35,6 +35,10 @@ export default defineConfig({
                         return 'fonts/[name].[ext]'
                     }
 
+                    if (chunk.name.endsWith('.png') || chunk.name.endsWith('.jpeg') || chunk.name.endsWith('.svg')) {
+                        return 'assets/[name].[ext]'
+                    }
+
                     return 'css/[name].[ext]'
                 },
             }
