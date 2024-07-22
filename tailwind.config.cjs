@@ -22,6 +22,7 @@ export default {
             padding: '20px',
             // default breakpoints but with 40px removed
             screens: {
+                xs: '400px',
                 sm: '600px',
                 md: '728px',
                 lg: '984px',
@@ -29,7 +30,7 @@ export default {
             },
         },
         screens: {
-            'xs': '400px',
+            'xs': '440px',
             'sm': '640px',
             'md': '768px',
             'lg': '1024px',

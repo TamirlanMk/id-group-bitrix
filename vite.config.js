@@ -1,6 +1,9 @@
 import {resolve} from 'path'
 import {defineConfig} from 'vite'
 
+const fontExtensions = ['ttf','woff', 'woff2'];
+const assetsExtensions = ['jpeg','png', 'jpg', 'svg'];
+
 export default defineConfig({
     root: './src',
     base: './',
@@ -27,15 +30,14 @@ export default defineConfig({
             output: {
                 entryFileNames: `js/[name].js`,
                 assetFileNames: chunk => {
-                    if (chunk.name.endsWith('.woff2')) {
+                    const splitedChunk = chunk.name.split('.')
+                    const chunkExtension = splitedChunk[splitedChunk.length - 1]
+
+                    if (fontExtensions.includes(chunkExtension)) {
                         return 'fonts/[name].[ext]'
                     }
 
-                    if (chunk.name.endsWith('.woff')) {
-                        return 'fonts/[name].[ext]'
-                    }
-
-                    if (chunk.name.endsWith('.png') || chunk.name.endsWith('.jpeg') || chunk.name.endsWith('.svg')) {
+                    if (assetsExtensions.includes(chunkExtension)) {
                         return 'assets/[name].[ext]'
                     }
 
